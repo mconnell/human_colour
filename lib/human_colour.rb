@@ -1,50 +1,10 @@
 # frozen_string_literal: true
 
 require_relative "human_colour/version"
+require_relative "human_colour/locales"
 
-# rubocop:disable Metrics/ModuleLength
 module HumanColour
   class Error < StandardError; end
-
-  LOCALES = {
-    en: {
-      tone: {
-        light: "light",
-        dark: "dark"
-      },
-      colour: {
-        red: "red",
-        orange: "orange",
-        yellow: "yellow",
-        green: "green",
-        blue: "blue",
-        purple: "purple",
-        pink: "pink",
-        grey: "grey",
-        black: "black",
-        white: "white"
-      }
-    },
-
-    es: {
-      tone: {
-        light: "claro",
-        dark: "oscuro"
-      },
-      colour: {
-        red: "rojo",
-        orange: "naranja",
-        yellow: "amarillo",
-        green: "verde",
-        blue: "azul",
-        purple: "morado",
-        pink: "rosa",
-        grey: "gris",
-        black: "negro",
-        white: "blanco"
-      }
-    }
-  }.freeze
 
   # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
   def self.parse(rgb_string, locale: :en)
@@ -137,4 +97,3 @@ module HumanColour
   # rubocop:enable Metrics/CyclomaticComplexity, Metrics/MethodLength
   private_class_method :colour
 end
-# rubocop:enable Metrics/ModuleLength
