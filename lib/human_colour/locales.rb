@@ -10,6 +10,7 @@ module HumanColour
       },
       colour: {
         red: "red",
+        brown: "brown",
         orange: "orange",
         yellow: "yellow",
         green: "green",
@@ -29,6 +30,7 @@ module HumanColour
       },
       colour: {
         red: "rojo",
+        brown: "marrón",
         orange: "naranja",
         yellow: "amarillo",
         green: "verde",
@@ -48,6 +50,7 @@ module HumanColour
       },
       colour: {
         red: "rosso",
+        brown: "marrone",
         orange: "arancione",
         yellow: "giallo",
         green: "verde",
@@ -67,6 +70,7 @@ module HumanColour
       },
       colour: {
         red: "rouge",
+        brown: "brun",
         orange: "orange",
         yellow: "jaune",
         green: "vert",
@@ -86,6 +90,7 @@ module HumanColour
       },
       colour: {
         red: "rot",
+        brown: "braun",
         orange: "orange",
         yellow: "gelb",
         green: "grün",
@@ -105,6 +110,7 @@ module HumanColour
       },
       colour: {
         red: "vermelho",
+        brown: "marrom",
         orange: "laranja",
         yellow: "amarelo",
         green: "verde",

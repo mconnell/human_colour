@@ -22,8 +22,8 @@ module HumanColour
     d = delta(red: red, green: green, blue: blue)
     s = saturation(delta: d, lightness: l)
     h = hue(delta: d, red: red, green: green, blue: blue)
-    t = tone(lightness: l, hue: h)
-    c = colour(saturation: s, hue: h)
+    c = colour(saturation: s, hue: h, lightness: l)
+    t = tone(lightness: l, hue: h, base: c)
 
     localised_tone   = LOCALES[locale][:tone][t]
     localised_colour = LOCALES[locale][:colour][c]
@@ -70,9 +70,12 @@ module HumanColour
   end
   private_class_method :hue
 
-  def self.tone(lightness:, hue:)
-    return nil if (260..320).cover?(hue) && lightness >= 0.22 && lightness < 0.28
-    return :dark if lightness < 0.28
+  def self.tone(lightness:, hue:, base:)
+    return nil if (260..320).cover?(hue) && lightness.between?(0.22, 0.28)
+    return nil if base == :brown
+
+    # All other hues
+    return :dark  if lightness < 0.28
     return :light if lightness > 0.74
 
     nil
@@ -80,8 +83,9 @@ module HumanColour
   private_class_method :tone
 
   # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
-  def self.colour(saturation:, hue:)
+  def self.colour(saturation:, hue:, lightness:)
     return :grey if saturation < 0.15
+    return :brown if (15..50).cover?(hue) && lightness < 0.5
 
     case hue
     when 0...15, 355..360 then :red
