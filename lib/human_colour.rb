@@ -5,6 +5,7 @@ require_relative "human_colour/version"
 module HumanColour
   class Error < StandardError; end
 
+  # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
   def self.parse(rgb_string)
     matches = rgb_string.match(/rgb\((\d+),\s*(\d+),\s*(\d+)\)/i)
     raise Error if matches.nil?
@@ -28,6 +29,7 @@ module HumanColour
 
     name
   end
+  # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
 
   def self.delta(red:, green:, blue:)
     [red, green, blue].max - [red, green, blue].min
@@ -72,6 +74,7 @@ module HumanColour
   end
   private_class_method :tone
 
+  # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
   def self.colour(saturation:, hue:)
     return "grey" if saturation < 0.15
 
@@ -86,5 +89,6 @@ module HumanColour
     else                       "grey"
     end
   end
+  # rubocop:enable Metrics/CyclomaticComplexity, Metrics/MethodLength
   private_class_method :colour
 end
