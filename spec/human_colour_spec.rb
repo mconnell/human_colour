@@ -17,6 +17,14 @@ RSpec.describe HumanColour do
       "rgb(255,0,0)"      => { en: "red",          es: "rojo",          it: "rosso",          fr: "rouge",         de: "rot",            pt: "vermelho" },
       "rgb(255,128,128)"  => { en: "light red",    es: "rojo claro",    it: "rosso chiaro",   fr: "rouge clair",   de: "hell rot",       pt: "vermelho claro" },
 
+      "rgb(128,64,0)"     => { en: "dark orange",  es: "naranja oscuro", it: "arancione scuro", fr: "orange foncé",  de: "dunkel orange", pt: "laranja escuro" },
+      "rgb(255,165,0)"    => { en: "orange",       es: "naranja",        it: "arancione",       fr: "orange",        de: "orange",        pt: "laranja" },
+      "rgb(255,200,128)"  => { en: "light orange", es: "naranja claro",  it: "arancione chiaro", fr: "orange clair", de: "hell orange",   pt: "laranja claro" },
+
+      "rgb(128,128,0)"    => { en: "dark yellow",  es: "amarillo oscuro", it: "giallo scuro",  fr: "jaune foncé",   de: "dunkel gelb",   pt: "amarelo escuro" },
+      "rgb(255,255,0)"    => { en: "yellow",       es: "amarillo",        it: "giallo",        fr: "jaune",         de: "gelb",          pt: "amarelo" },
+      "rgb(255,255,153)"  => { en: "light yellow", es: "amarillo claro",  it: "giallo chiaro", fr: "jaune clair",   de: "hell gelb",     pt: "amarelo claro" },
+
       "rgb(0,64,0)"       => { en: "dark green",   es: "verde oscuro",  it: "verde scuro",    fr: "vert foncé",    de: "dunkel grün",    pt: "verde escuro" },
       "rgb(0,255,0)"      => { en: "green",        es: "verde",         it: "verde",          fr: "vert",          de: "grün",           pt: "verde" },
       "rgb(144,238,144)"  => { en: "light green",  es: "verde claro",   it: "verde chiaro",   fr: "vert clair",    de: "hell grün",      pt: "verde claro" },
