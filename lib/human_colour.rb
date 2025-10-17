@@ -28,10 +28,10 @@ module HumanColour
     localised_tone   = LOCALES[locale][:tone][t]
     localised_colour = LOCALES[locale][:colour][c]
 
-    if locale == :es
-      [localised_colour, localised_tone].compact.join(" ")
-    else
+    if [:en, :de].include?(locale)
       [localised_tone, localised_colour].compact.join(" ")
+    else
+      [localised_colour, localised_tone].compact.join(" ")
     end
   end
   # rubocop:enable Metrics/AbcSize, Metrics/MethodLength

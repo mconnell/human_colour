@@ -28,6 +28,12 @@ Layout/LineContinuationSpacing: # new in 1.31
   Enabled: true
 Layout/LineEndStringConcatenationIndentation: # new in 1.18
   Enabled: true
+Layout/LineLength:
+  Exclude:
+    - "spec/**/*.rb"
+Layout/HashAlignment:
+  Exclude:
+    - "spec/**/*.rb"
 Layout/SpaceBeforeBrackets: # new in 1.7
   Enabled: true
 Lint/AmbiguousAssignment: # new in 1.7
@@ -293,5 +299,7 @@ Style/SuperWithArgsParentheses: # new in 1.58
   Enabled: true
 Style/SwapValues: # new in 1.1
   Enabled: true
+Style/SymbolArray:
+  Enabled: false
 Style/YAMLFileRead: # new in 1.53
   Enabled: true
