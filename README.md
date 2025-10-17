@@ -19,12 +19,17 @@ gem install human_colour
 ## Usage
 
 ```ruby
+  require "human_colour"
+
   HumanColour.parse("rgb(128,64,0)")
   #=> "dark orange"
 
-  # Return a colour based on the provided locale
+  # Return a colour based on the provided locale (:de, :en, :es, :fr, :it, :pt)
   HumanColour.parse("rgb(128,64,0)", locale: :es)
   #=> "naranja oscuro"
+
+  HumanColour.parse("rgb(255, 128, 255", locale: :de)
+  #=> "hell lila"
 ```
 
 ![alt text](https://github.com/mconnell/human_colour/blob/main/doc/colours.png?raw=true)
