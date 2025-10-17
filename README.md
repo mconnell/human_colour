@@ -23,6 +23,8 @@ gem install human_colour
   #> "dark orange"
 ```
 
+![alt text](https://github.com/mconnell/human_colour/blob/main/doc/colours.png?raw=true)
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
