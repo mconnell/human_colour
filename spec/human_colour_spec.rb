@@ -37,7 +37,7 @@ RSpec.describe HumanColour do
     colours.each do |rgb, expected_translations|
       describe rgb do
         expected_translations.each do |locale, expected|
-          it "returns #{expected.inspect} for locale #{locale}" do
+          it "returns #{expected.inspect} for locale :#{locale}" do
             result = described_class.parse(rgb, locale: locale)
             expect(result).to eq(expected)
           end
