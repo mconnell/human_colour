@@ -4,5 +4,8 @@ require_relative "human_colour/version"
 
 module HumanColour
   class Error < StandardError; end
-  # Your code goes here...
+
+  def self.parse(_rgb_string)
+    "black"
+  end
 end

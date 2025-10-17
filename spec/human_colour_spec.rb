@@ -5,7 +5,9 @@ RSpec.describe HumanColour do
     expect(HumanColour::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  describe ".parse" do
+    context "rgb() strings" do
+      it { expect(described_class.parse("rgb(0,0,0)")).to eq("black") }
+    end
   end
 end
