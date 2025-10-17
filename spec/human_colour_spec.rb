@@ -8,6 +8,7 @@ RSpec.describe HumanColour do
   describe ".parse" do
     context "rgb() strings" do
       it { expect(described_class.parse("rgb(0,0,0)")).to eq("black") }
+      it { expect(described_class.parse("rgb(255,255,255)")).to eq("white") }
     end
   end
 end
