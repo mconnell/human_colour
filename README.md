@@ -22,11 +22,11 @@ gem install human_colour
   require "human_colour"
 
   HumanColour.parse("rgb(128,64,0)")
-  #=> "dark orange"
+  #=> "brown"
 
   # Return a colour based on the provided locale (:de, :en, :es, :fr, :it, :pt)
   HumanColour.parse("rgb(128,64,0)", locale: :es)
-  #=> "naranja oscuro"
+  #=> "marrón"
 
   HumanColour.parse("rgb(255, 128, 255", locale: :de)
   #=> "hell lila"
