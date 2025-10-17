@@ -1,5 +1,7 @@
 # HumanColour
 
+[![Gem Version](https://badge.fury.io/rb/human_colour.svg?icon=si%3Arubygems&icon_color=%23ffffff)](https://badge.fury.io/rb/human_colour)
+
 Simple gem for taking an RGB colour string, and converting it into a human-friendly name.
 
 ## Installation
