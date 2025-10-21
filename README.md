@@ -26,6 +26,9 @@ gem install human_colour
   HumanColour.parse("rgb(128,64,0)")
   #=> "brown"
 
+  HumanColour.parse("rgb(30, 20, 10)")
+  #=> "near black"
+
   # Return a colour based on the provided locale (:de, :en, :es, :fr, :it, :pt)
   HumanColour.parse("rgb(128,64,0)", locale: :es)
   #=> "marrón"
