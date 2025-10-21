@@ -19,6 +19,7 @@ module HumanColour
         pink: "pink",
         grey: "grey",
         black: "black",
+        near_black: "near black",
         white: "white"
       }
     },
@@ -39,6 +40,7 @@ module HumanColour
         pink: "rosa",
         grey: "gris",
         black: "negro",
+        near_black: "casi negro",
         white: "blanco"
       }
     },
@@ -59,6 +61,7 @@ module HumanColour
         pink: "rosa",
         grey: "grigio",
         black: "nero",
+        near_black: "quasi nero",
         white: "bianco"
       }
     },
@@ -79,6 +82,7 @@ module HumanColour
         pink: "rose",
         grey: "gris",
         black: "noir",
+        near_black: "presque noir",
         white: "blanc"
       }
     },
@@ -99,6 +103,7 @@ module HumanColour
         pink: "rosa",
         grey: "grau",
         black: "schwarz",
+        near_black: "fast schwarz",
         white: "weiß"
       }
     },
@@ -119,6 +124,7 @@ module HumanColour
         pink: "rosa",
         grey: "cinza",
         black: "preto",
+        near_black: "quase preto",
         white: "branco"
       }
     }

@@ -18,6 +18,8 @@ module HumanColour
     green = matches[2].to_i / 255.0
     blue  = matches[3].to_i / 255.0
 
+    return LOCALES[locale][:colour][:near_black] if [red, green, blue].all? { |v| v < 0.126 }
+
     l = lightness(red: red, green: green, blue: blue)
     d = delta(red: red, green: green, blue: blue)
     s = saturation(delta: d, lightness: l)
