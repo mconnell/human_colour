@@ -18,6 +18,7 @@ RSpec.describe HumanColour do
       "rgb(255,128,128)"  => { en: "light red",    es: "rojo claro",      it: "rosso chiaro",     fr: "rouge clair",   de: "hell rot",      pt: "vermelho claro" },
 
       "rgb(255,165,0)"    => { en: "orange",       es: "naranja",         it: "arancione",        fr: "orange",        de: "orange",        pt: "laranja" },
+      "rgb(240,161,39)"   => { en: "orange",       es: "naranja",         it: "arancione",        fr: "orange",        de: "orange",        pt: "laranja" },
       "rgb(255,200,128)"  => { en: "light orange", es: "naranja claro",   it: "arancione chiaro", fr: "orange clair",  de: "hell orange",   pt: "laranja claro" },
 
       "rgb(128,128,0)"    => { en: "dark yellow",  es: "amarillo oscuro", it: "giallo scuro",     fr: "jaune foncé",   de: "dunkel gelb",   pt: "amarelo escuro" },
