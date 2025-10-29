@@ -32,6 +32,8 @@ module HumanColour
 
     if [:en, :de].include?(locale)
       [localised_tone, localised_colour].compact.join(" ")
+    elsif [:ja].include?(locale)
+      [localised_tone, localised_colour].compact.join
     else
       [localised_colour, localised_tone].compact.join(" ")
     end
