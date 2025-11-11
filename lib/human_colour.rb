@@ -6,7 +6,7 @@ require_relative "human_colour/locales"
 module HumanColour
   class Error < StandardError; end
 
-  # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+  # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/PerceivedComplexity, Metrics/CyclomaticComplexity
   def self.parse(rgb_string, locale: :en)
     matches = rgb_string.match(/rgb\((\d+),\s*(\d+),\s*(\d+)\)/i)
     raise Error if matches.nil?
@@ -38,7 +38,7 @@ module HumanColour
       [localised_colour, localised_tone].compact.join(" ")
     end
   end
-  # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
+  # rubocop:enable Metrics/AbcSize, Metrics/MethodLength, Metrics/PerceivedComplexity, Metrics/CyclomaticComplexity
 
   def self.delta(red:, green:, blue:)
     [red, green, blue].max - [red, green, blue].min
