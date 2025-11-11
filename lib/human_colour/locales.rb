@@ -127,6 +127,27 @@ module HumanColour
         near_black: "quase preto",
         white: "branco"
       }
+    },
+
+    ja: {
+      tone: {
+        light: "薄い",
+        dark: "濃い"
+      },
+      colour: {
+        red: "赤",
+        brown: "茶色",
+        orange: "オレンジ",
+        yellow: "黄色",
+        green: "緑",
+        blue: "青",
+        purple: "紫",
+        pink: "ピンク",
+        grey: "灰色",
+        black: "黒",
+        near_black: "黒に近い",
+        white: "白"
+      }
     }
   }.freeze
 end
